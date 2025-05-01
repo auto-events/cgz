@@ -1,5 +1,4 @@
-const defaultTemplates = [
-  {
+({
     meta: { name: "Peer Connection Game", description: "Multiplayer game using PeerJS." },
     styles: { backgroundColor: "#f4f4f4", textColor: "#222", buttonColor: "#4CAF50", fontFamily: "Arial" },
     settingsSchema: {
@@ -52,5 +51,4 @@ const defaultTemplates = [
       peer.on('error', (err) => { console.error('PeerJS Error:', err); });
       deps.setPeer(peer);
     }
-  }
-];
+  })
